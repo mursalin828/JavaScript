@@ -1,11 +1,11 @@
-let name = "Mursalin";
+let textData = "Hello world";
 
-let age = 22;
+let numberData = 50;
 
-console.log(name);
+let isJsFun = true;
 
-console.log(age);
+console.log(typeof textData);
 
-let firstName = "Mursalin";
+console.log(typeof numberData);
 
-console.log(firstName);
+console.log(typeof isJsFun);
