@@ -1,11 +1,14 @@
-let textData = "Hello world";
+function sayHello (name) {
+    console.log("Hi " + name + " How are you?");
+}
 
-let numberData = 50;
+sayHello("Mursalin");
 
-let isJsFun = true;
+sayHello('Tushar');
 
-console.log(typeof textData);
+function addnum(num1, num2) {
+    let sum = num1 + num2;
+    console.log(sum);
+}
 
-console.log(typeof numberData);
-
-console.log(typeof isJsFun);
+addnum(5, 10);
