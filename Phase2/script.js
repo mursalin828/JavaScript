@@ -1,6 +1,9 @@
-function displayMessage(){
-    alert("Button was Clicked successfully!");
+function changeStyle(){
+    let titleElement = document.getElementById('myTitle');
+
+    titleElement.innerText = 'javascript is awwsome!';
+
+    titleElement.style.color = 'red';
+
+    titleElement.style.backgroundColor = 'yellow';
 }
-
-console.log("mursalin");
-
