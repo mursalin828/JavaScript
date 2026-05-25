@@ -1,9 +1,19 @@
-function changeStyle(){
-    let titleElement = document.getElementById('myTitle');
+async function getRandomUser() {
+    console.log("fetching data... plrase wait.");
 
-    titleElement.innerText = 'javascript is awwsome!';
+    let response = await fetch("https://randomuser.me/api/");
 
-    titleElement.style.color = 'red';
+    let data = await response.json();
 
-    titleElement.style.backgroundColor = 'yellow';
+    let user = data.results[0];
+
+    let fname = user.name.first + " " + user.name.last;
+
+    let email = user.email;
+
+    console.log("user name: " + fname);
+
+    console.log('user email: ' + email);
 }
+
+getRandomUser();
